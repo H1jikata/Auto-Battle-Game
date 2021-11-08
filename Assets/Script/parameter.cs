@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "GameParameter", menuName = "GameParameter")]
 public class parameter : ScriptableObject
 {
     [SerializeField] int _hp;
     [SerializeField] int _power;
     [SerializeField] int _def;
+    [SerializeField] float _ultTime;
     void Start()
     {
         
@@ -31,5 +33,10 @@ public class parameter : ScriptableObject
     public int Defense
     {
         get { return _def; }
+    }
+
+    public float Ult
+    {
+        get { return _ultTime; }
     }
 }

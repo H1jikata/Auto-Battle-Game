@@ -65,8 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\AutoBattle.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\Ramuda.cs" />
+    <Compile Include="Assets\Script\parameter.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.24f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 velocity = _dir.normalized * _speed;
+        Vector3 velocity = _dir.normalized * Speed;
         velocity.y = _rb.velocity.y;
         _rb.velocity = velocity;
     }
@@ -40,7 +40,6 @@ public class Player : MonoBehaviour
         {
             Vector3 walkSpeed = _rb.velocity;
             _ani.SetFloat("Speed", walkSpeed.magnitude);
-            Debug.Log("a");
         }
     }
 

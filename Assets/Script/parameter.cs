@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameParameter", menuName = "GameParameter")]
-public class parameter : ScriptableObject
+public class Parameter : MonoBehaviour
 {
-    [SerializeField] int _hp;
+    /*[SerializeField] int _hp;
     [SerializeField] int _power;
     [SerializeField] int _def;
-    [SerializeField] float _ultTime;
+    [SerializeField] float _ultTime;*/
     void Start()
     {
         
@@ -20,23 +19,29 @@ public class parameter : ScriptableObject
         
     }
 
-    public int HP
+    class Player
     {
-        get { return _hp; }
+        string _name;
+        int _hp;
     }
 
-    public int Power
-    {
-        get { return _power; }
-    }
+    //public int HP
+    //{
+    //    get { return _hp; }
+    //}
 
-    public int Defense
-    {
-        get { return _def; }
-    }
+    //public int Power
+    //{
+    //    get { return _power; }
+    //}
 
-    public float Ult
-    {
-        get { return _ultTime; }
-    }
+    //public int Defense
+    //{
+    //    get { return _def; }
+    //}
+
+    //public float Ult
+    //{
+    //    get { return _ultTime; }
+    //}
 }

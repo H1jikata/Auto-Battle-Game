@@ -666,6 +666,9 @@
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -677,6 +680,9 @@
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

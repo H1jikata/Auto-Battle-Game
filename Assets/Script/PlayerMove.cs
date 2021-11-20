@@ -12,9 +12,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject _enemy = null;
     bool _flg = false;
     Animator _ani;
+    Enemy _enemyHp;
+    IDamage _damage;
     void Start()
     {
         _ani = GetComponent<Animator>();
+        _enemyHp = GetComponent<Enemy>();
     }
 
     void Update()
@@ -36,6 +39,11 @@ public class PlayerMove : MonoBehaviour
                 _ani.SetBool("Attack", true);
                 StartCoroutine("CoolTime");
                 _flg = true;
+                var _damageTarget = _enemy.GetComponent<IDamage>();
+                if(_damageTarget != null)
+                {
+                    _enemy.GetComponent<IDamage>().GetDamage(rnd);
+                }
             }
             else
             {
@@ -60,6 +68,11 @@ public class PlayerMove : MonoBehaviour
         _ani.SetBool("Attack2", false);
         _coolTime = 0;
         _flg = false;
+    }
+
+    void AnimEvent()
+    {
+
     }
     public float Defence
     {

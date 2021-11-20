@@ -65,10 +65,4 @@ public class Enemy : MonoBehaviour
         get { return _defense; }
         set { _defense = value; }
     }
-
-    public float Speed
-    {
-        get { return _speed; }
-        set { _defense = value; }
-    }
 }

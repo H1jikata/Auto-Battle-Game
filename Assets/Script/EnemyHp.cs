@@ -12,6 +12,7 @@ public class EnemyHp : MonoBehaviour,IDamage
         if(_enemyHp <= 0)
         {
             Debug.Log("Enemyを倒した");
+            Destroy(this.gameObject);
         }
     }
 }

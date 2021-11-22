@@ -50,6 +50,11 @@ public class PlayerMove : MonoBehaviour
                 _ani.SetBool("Attack2", true);
                 StartCoroutine("CoolTime1");
                 _flg = true;
+                var _damageTarget = _enemy.GetComponent<IDamage>();
+                if (_damageTarget != null)
+                {
+                    _enemy.GetComponent<IDamage>().GetDamage(rnd);
+                }
             }
         }
     }

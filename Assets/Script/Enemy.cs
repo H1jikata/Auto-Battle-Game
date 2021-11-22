@@ -33,13 +33,13 @@ public class Enemy : MonoBehaviour
             if (rnd < 5)
             {
                 _ani.SetBool("Attack", true);
-                StartCoroutine("CoolTime");
+                StartCoroutine(CoolTime());
                 _flg = true;
             }
             else
             {
                 _ani.SetBool("Attack2", true);
-                StartCoroutine("CoolTime1");
+                StartCoroutine(CoolTime1());
                 _flg = true;
             }
         }

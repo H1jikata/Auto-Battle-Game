@@ -111,6 +111,10 @@
     <Compile Include="Assets\AssetStore\LowpolySimpleHouse\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
+    <Compile Include="Assets\Fade\Scripts\Fade.cs" />
+    <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
+    <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
+    <Compile Include="Assets\Fade\Scripts\IFade.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyHp.cs" />
@@ -177,6 +181,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess_Light.shader" />
     <None Include="Assets\AssetStore\LowpolySimpleHouse\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_StencilOut.shader" />
+    <None Include="Assets\Fade\Materials\UI-Fade-Cutout.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_AngelRing_TransClipping_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_OutlineObject_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\LowpolySimpleHouse\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
@@ -201,6 +206,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_OutlineObject_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_AngelRing_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess.shader" />
+    <None Include="Assets\Fade\Materials\UI-Mask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_ShadingGradeMap_AngelRing_Tess.shader" />
     <None Include="Assets\AssetStore\LowpolySimpleHouse\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess_StencilMask.shader" />
@@ -280,6 +286,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_TransClipping.shader" />
     <None Include="Assets\AssetStore\LowpolySimpleHouse\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Clipping_StencilOut.shader" />
+    <None Include="Assets\Fade\Materials\UI-Fade-Alpha.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_OutlineObject_StencilOut.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />

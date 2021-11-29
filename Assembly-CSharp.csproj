@@ -115,6 +115,7 @@
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyHp.cs" />
     <Compile Include="Assets\Script\Entrance.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Idamage.cs" />
     <Compile Include="Assets\Script\Ontrriger.cs" />
     <Compile Include="Assets\Script\Parameter.cs" />

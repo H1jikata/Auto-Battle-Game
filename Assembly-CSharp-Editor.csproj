@@ -64,10 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animation\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\CopyMaterialParameter.cs" />
-    <Compile Include="Assets\Animation\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\RemoveUnusedMaterialProperties.cs" />
-    <Compile Include="Assets\Animation\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\RemoveUnusedShaderKeywordsFromUTS2Material.cs" />
-    <Compile Include="Assets\Animation\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\UTS2GUI.cs" />
+    <Compile Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\CopyMaterialParameter.cs" />
+    <Compile Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\RemoveUnusedMaterialProperties.cs" />
+    <Compile Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\RemoveUnusedShaderKeywordsFromUTS2Material.cs" />
+    <Compile Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Editor\UTS2GUI.cs" />
     <Compile Include="Assets\DefaultPlayables\Editor\TimelinePlayableWizard.cs" />
     <Compile Include="Assets\DefaultPlayables\LightControl\Editor\LightControlDrawer.cs" />
     <Compile Include="Assets\DefaultPlayables\ScreenFader\Editor\ScreenFaderDrawer.cs" />

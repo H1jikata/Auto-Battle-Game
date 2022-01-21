@@ -64,41 +64,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\ScreenFader\ScreenFaderBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\ScreenFader\ScreenFaderClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\ScreenFader\ScreenFaderMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\ScreenFader\ScreenFaderTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TextSwitcher\TextSwitcherBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TextSwitcher\TextSwitcherClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TextSwitcher\TextSwitcherMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TextSwitcher\TextSwitcherTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TimeDilation\TimeDilationBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TimeDilation\TimeDilationClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TimeDilation\TimeDilationMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TimeDilation\TimeDilationTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TransformTween\TransformTweenBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TransformTween\TransformTweenClip.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TransformTween\TransformTweenMixerBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\TransformTween\TransformTweenTrack.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoPlayableBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoSchedulerPlayableBehaviour.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
+    <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
-    <Compile Include="Assets\DefaultPlayables\LightControl\LightControlBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\LightControl\LightControlClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\LightControl\LightControlMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\LightControl\LightControlTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\ScreenFader\ScreenFaderBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\ScreenFader\ScreenFaderClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\ScreenFader\ScreenFaderMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\ScreenFader\ScreenFaderTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\TextSwitcher\TextSwitcherBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TextSwitcher\TextSwitcherClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\TextSwitcher\TextSwitcherMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TextSwitcher\TextSwitcherTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\TimeDilation\TimeDilationBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TimeDilation\TimeDilationClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\TimeDilation\TimeDilationMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TimeDilation\TimeDilationTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\TransformTween\TransformTweenBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TransformTween\TransformTweenClip.cs" />
-    <Compile Include="Assets\DefaultPlayables\TransformTween\TransformTweenMixerBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\TransformTween\TransformTweenTrack.cs" />
-    <Compile Include="Assets\DefaultPlayables\Video\VideoPlayableBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\Video\VideoSchedulerPlayableBehaviour.cs" />
-    <Compile Include="Assets\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
-    <Compile Include="Assets\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
-    <Compile Include="Assets\Fade\Scripts\Fade.cs" />
-    <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
-    <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
-    <Compile Include="Assets\Fade\Scripts\IFade.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
+    <Compile Include="Assets\Script\CardController.cs" />
+    <Compile Include="Assets\Script\CardManager.cs" />
     <Compile Include="Assets\Script\CountDown.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyHp.cs" />
@@ -151,7 +149,6 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_AngelRing_TransClipping_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess_Light.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_StencilOut.shader" />
-    <None Include="Assets\Fade\Materials\UI-Fade-Cutout.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_AngelRing_TransClipping_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_OutlineObject_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_TransClipping.shader" />
@@ -173,7 +170,6 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_OutlineObject_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_AngelRing_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess.shader" />
-    <None Include="Assets\Fade\Materials\UI-Mask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_ShadingGradeMap_AngelRing_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess_StencilMask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_Clipping.shader" />
@@ -229,7 +225,6 @@
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_TransClipping.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Clipping_StencilOut.shader" />
-    <None Include="Assets\Fade\Materials\UI-Fade-Alpha.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_OutlineObject_StencilOut.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />
@@ -812,8 +807,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
@@ -826,12 +827,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/vantan/Desktop/課題etc/AutoBattle/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

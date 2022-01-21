@@ -14,8 +14,15 @@ public class CardController : MonoBehaviour
     /// <summary>相手側のPanelのTransform</summary>
     Transform _teamPanelTransform = default;
 
-    private void Start()
+    //Teamにはいっているか判断するflag
+    static bool _IsTeam = false;
+    [SerializeField] bool test = false;
+
+    [SerializeField]int _number;
+
+    private void Awake()
     {
+        _IsTeam = test;
         //PanelのTransformを取得
         _teamPanelTransform = GameObject.FindGameObjectWithTag(_Team).transform;
         _boxPanelTransform = GameObject.FindGameObjectWithTag(_Box).transform;
@@ -31,5 +38,13 @@ public class CardController : MonoBehaviour
         {
             this.transform.SetParent(_boxPanelTransform);
         }
+    }
+    /// <summary>
+    ///Teamにはいっているか判断するflag
+    /// </summary>
+    public bool IsTeam
+    {
+        get { return _IsTeam; }
+        set { _IsTeam = value; }
     }
 }

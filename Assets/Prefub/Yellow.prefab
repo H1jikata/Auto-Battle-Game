@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3006434554802221222}
   - component: {fileID: 3006434554802221223}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,3 +144,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Box: Box
   _Team: Team
+  test: 0
+  _number: 3

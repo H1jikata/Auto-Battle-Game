@@ -22,7 +22,6 @@ public class CardController : MonoBehaviour
 
     private void Awake()
     {
-        _IsTeam = test;
         //PanelのTransformを取得
         _teamPanelTransform = GameObject.FindGameObjectWithTag(_Team).transform;
         _boxPanelTransform = GameObject.FindGameObjectWithTag(_Box).transform;
@@ -31,7 +30,7 @@ public class CardController : MonoBehaviour
     {
         //相手側のPanelの子オブジェクトにする
         if (transform.parent.gameObject.tag == _Box)
-        {
+        { 
             this.transform.SetParent(_teamPanelTransform);
         }
         else

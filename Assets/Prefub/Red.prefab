@@ -139,10 +139,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3457435536045631126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4883bd3f72c58641bd41a6d0881c4d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 56efeea9ae9480f4aa3e57fb0c451aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _Box: Box
   _Team: Team
-  test: 1
-  _number: 2
+  test: 0
+  _number: 0

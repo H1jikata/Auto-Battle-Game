@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerContoroller : MonoBehaviour
 {
     [SerializeField] float _speed = 5f;
     Vector3 _dir = default;

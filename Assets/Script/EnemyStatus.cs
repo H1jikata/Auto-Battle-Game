@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHp : MonoBehaviour,IDamage
+public class EnemyStatus : MonoBehaviour,IDamage
 {
     [SerializeField] float _enemyHp = 20;
+    [SerializeField] float _defence = 3;
 
     public void GetDamage(float damege)
     {
-        _enemyHp -= damege;
+        _enemyHp -= Mathf.Abs(_defence - damege);
         if(_enemyHp <= 0)
         {
             Debug.Log("Enemyを倒した");

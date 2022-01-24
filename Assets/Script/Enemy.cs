@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float _defense = 5;
-    [SerializeField] int _speed = 10;
     [SerializeField] float _coolTime = 0;
-    [SerializeField] float _reset = 1;
-    [SerializeField] GameObject _enemyPlayer = null;
+    [SerializeField,Tooltip("次に行動できるまでの時間")] float _delayTime = 3f;
+    [SerializeField,Tooltip("コルーチンの時間")] float _reset = 1;
+    [SerializeField,Tooltip("攻撃するターゲット")] GameObject _enemyPlayer = default;
     bool _flg = false;
     Animator _ani;
     void Start()
@@ -19,7 +18,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         _coolTime += Time.deltaTime; 
-        if(_coolTime > 3f && _flg == false)
+        if(_coolTime > _delayTime && _flg == false)
         {
             Attack();
         }
@@ -59,10 +58,5 @@ public class Enemy : MonoBehaviour
         _ani.SetBool("Attack2", false);
         _coolTime = 0;
         _flg = false;
-    }
-    public float Defence
-    {
-        get { return _defense; }
-        set { _defense = value; }
     }
 }

@@ -2,14 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour,IDamage
 {
-    [SerializeField] float _hp = 100;
+    [SerializeField] float _playerHp = 100;
     [SerializeField] float _defense = 5;
    
     public void DefenceChange(float value)
     {
         _defense += value;
+    }
+
+    public void GetDamage(float damage)
+    {
+        _playerHp = Mathf.Abs(damage - Defence);
+
+        if(_playerHp <= 0)
+        {
+            Debug.Log("Playerがやられた");
+            Destroy(this.gameObject);
+        }
     }
 
     public float Defence
@@ -19,7 +30,7 @@ public class PlayerStatus : MonoBehaviour
 
     public float Hp
     {
-        get { return _hp; }
-        set { _hp = value; }
+        get { return _playerHp; }
+        set { _playerHp = value; }
     }
 }

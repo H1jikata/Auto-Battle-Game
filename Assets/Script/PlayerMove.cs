@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] float _coolTime = 0;
-    [SerializeField] float _reset = 1;
-    [SerializeField] GameObject _enemy = null;
+    [SerializeField,Tooltip("次の行動までの時間")] float _coolTime = 0;
+    [SerializeField,Tooltip("コルーチンの待つ時間")] float _reset = 1;
+    [SerializeField,Tooltip("攻撃するEnemyのGameObject")] GameObject _enemy = default;
     bool _flg = false;
     Animator _ani;
     Enemy _enemyHp;

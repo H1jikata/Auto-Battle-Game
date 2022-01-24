@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     //GameStart_"Select"にシーン遷移
     public void GameStart()
     {
-        _audio.Play();
+        //_audio.Play();
         SceneManager.LoadScene("Select");
     }
 

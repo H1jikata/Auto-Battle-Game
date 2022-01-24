@@ -16,7 +16,6 @@ public class CardController : MonoBehaviour
 
     //Teamにはいっているか判断するflag
     static bool _IsTeam = false;
-    [SerializeField] bool test = false;
 
     [SerializeField] int _number;
 

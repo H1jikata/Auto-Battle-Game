@@ -6,6 +6,7 @@ public class PlayerStatus : MonoBehaviour,IDamage
 {
     [SerializeField] float _playerHp = 100;
     [SerializeField] float _defense = 5;
+    [SerializeField] int _playerNumber = default;
    
     public void DefenceChange(float value)
     {

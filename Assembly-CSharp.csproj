@@ -95,6 +95,7 @@
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
+    <Compile Include="Assets\Script\BattleManager.cs" />
     <Compile Include="Assets\Script\CardController.cs" />
     <Compile Include="Assets\Script\CardManager.cs" />
     <Compile Include="Assets\Script\CountDown.cs" />

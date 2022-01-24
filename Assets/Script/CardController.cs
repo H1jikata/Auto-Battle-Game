@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CardController : MonoBehaviour
 {
-    [SerializeField,Tooltip("Boxのtag")] 
+    [SerializeField, Tooltip("Boxのtag")]
     string _Box = "Box";
-    [SerializeField,Tooltip("Teamのtag")]
+    [SerializeField, Tooltip("Teamのtag")]
     string _Team = "Team";
 
     /// <summary>相手側のPanelのTransform</summary>
@@ -18,7 +18,7 @@ public class CardController : MonoBehaviour
     static bool _IsTeam = false;
     [SerializeField] bool test = false;
 
-    [SerializeField]int _number;
+    [SerializeField] int _number;
 
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class CardController : MonoBehaviour
     public void OnClick()
     {
         //相手側のPanelの子オブジェクトにする
-        if(transform.parent.gameObject.tag == _Box)
+        if (transform.parent.gameObject.tag == _Box)
         {
             this.transform.SetParent(_teamPanelTransform);
         }
@@ -46,5 +46,10 @@ public class CardController : MonoBehaviour
     {
         get { return _IsTeam; }
         set { _IsTeam = value; }
+    }
+
+    public int Number
+    {
+        get { return _number; }
     }
 }

@@ -144,5 +144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Box: Box
   _Team: Team
-  test: 0
-  _number: 0
+  _number: 2

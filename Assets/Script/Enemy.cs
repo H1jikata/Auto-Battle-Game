@@ -10,9 +10,12 @@ public class Enemy : MonoBehaviour
     [SerializeField,Tooltip("攻撃するターゲット")] GameObject _enemyPlayer = default;
     bool _flg = false;
     Animator _ani;
+    PlayerMove _playerMove;
+    IDamage _damage;
     void Start()
     {
-       _ani =  GetComponent<Animator>();
+        _ani =  GetComponent<Animator>();
+        _playerMove = GetComponent<PlayerMove>();
     }
 
     void Update()
@@ -34,12 +37,22 @@ public class Enemy : MonoBehaviour
                 _ani.SetBool("Attack", true);
                 StartCoroutine(CoolTime());
                 _flg = true;
+                var _damageTarget = _enemyPlayer.GetComponent<IDamage>();
+                if(_damageTarget != null)
+                {
+                    _enemyPlayer.GetComponent<IDamage>().GetDamage(rnd);
+                }
             }
             else
             {
                 _ani.SetBool("Attack2", true);
                 StartCoroutine(CoolTime1());
                 _flg = true;
+                var _damageTarget = _enemyPlayer.GetComponent<IDamage>();
+                if (_damageTarget != null)
+                {
+                    _enemyPlayer.GetComponent<IDamage>().GetDamage(rnd);
+                }
             }
         }
     }

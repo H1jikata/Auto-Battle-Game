@@ -96,8 +96,10 @@
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
     <Compile Include="Assets\Script\BattleManager.cs" />
+    <Compile Include="Assets\Script\ButtonSceneChange.cs" />
     <Compile Include="Assets\Script\CardController.cs" />
     <Compile Include="Assets\Script\CardManager.cs" />
+    <Compile Include="Assets\Script\ChangeScene.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyStatus.cs" />
     <Compile Include="Assets\Script\Entrance.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="Assets\Script\PlayerMove.cs" />
     <Compile Include="Assets\Script\PlayerStatus.cs" />
     <Compile Include="Assets\Script\SelectController.cs" />
+    <Compile Include="Assets\Script\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\test.cs" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />

@@ -9,11 +9,16 @@ public class EnemyStatus : MonoBehaviour,IDamage
 
     public void GetDamage(float damege)
     {
-        _enemyHp -= Mathf.Abs(_defence - damege);
+        _enemyHp -= Mathf.Abs(Defence - damege);
         if(_enemyHp <= 0)
         {
             Debug.Log("Enemyを倒した");
             Destroy(this.gameObject);
         }
+    }
+
+    public float Defence
+    {
+        get { return _defence; }
     }
 }

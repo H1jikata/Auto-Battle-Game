@@ -15,7 +15,7 @@ public class CardController : MonoBehaviour
     Transform _teamPanelTransform = default;
 
     //Teamにはいっているか判断するflag
-    static bool _IsTeam = false;
+    bool _IsTeam;
 
     [SerializeField] int _number;
 
@@ -27,27 +27,27 @@ public class CardController : MonoBehaviour
     }
     public void OnClick()
     {
-        //相手側のPanelの子オブジェクトにする
-        if (transform.parent.gameObject.tag == _Box)
-        { 
-            this.transform.SetParent(_teamPanelTransform);
-        }
-        else
-        {
-            this.transform.SetParent(_boxPanelTransform);
-        }
+        ////相手側のPanelの子オブジェクトにする
+        //if (transform.parent.gameObject.tag == _Box)
+        //{ 
+        //    this.transform.SetParent(_teamPanelTransform);
+        //    IsTeam = true;
+        //}
+        //else
+        //{
+        //    this.transform.SetParent(_boxPanelTransform);
+        //    IsTeam = false;
+        //}
+        CardManager.Instance.ChangeTeam(this.gameObject,_number, _boxPanelTransform, _teamPanelTransform);
     }
     /// <summary>
     ///Teamにはいっているか判断するflag
     /// </summary>
-    public bool IsTeam
-    {
-        get { return _IsTeam; }
-        set { _IsTeam = value; }
-    }
 
     public int Number
     {
         get { return _number; }
     }
+
+    public bool IsTeam { get => _IsTeam; set => _IsTeam = value; }
 }

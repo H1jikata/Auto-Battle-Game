@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardManager : MonoBehaviour
+public class CardManager : SingletonMonoBehaviour<CardManager>
 {
     [SerializeField,Tooltip("CardのPrefubの配列")] 
     GameObject[] _cardPrefubs = default;
@@ -14,17 +14,30 @@ public class CardManager : MonoBehaviour
     GameObject _boxPanel = default;
     [SerializeField, Tooltip("TeamのPanel")] 
     GameObject _teamPanel = default;
+
+    [SerializeField, Tooltip("Boxのtag")]
+    string _Box = "Box";
+    [SerializeField, Tooltip("Teamのtag")]
+    string _Team = "Team";
+
+
+    static List<bool> _isTeams = new List<bool>();
+
+    public static List<bool> IsTeams { get => _isTeams; set => _isTeams = value; }
+
     void Start()
     {
         //配列のSizeを決める
         _cardControllers = new CardController[_cardPrefubs.Length];
 
         SetTeam();
+        DontDestroyOnLoad(this);
     }
+    
     /// <summary>
     /// カードがTeamにいるかを判断して、生成する関数
     /// </summary>
-    void SetTeam()
+    public void SetTeam()
     {
         //CardPrefubの数、for文を回す
         for (int i = 0; i < _cardPrefubs.Length; i++)
@@ -35,11 +48,30 @@ public class CardManager : MonoBehaviour
             if (_cardControllers[i].IsTeam)　//コンポーネントにあるフラグがtrueの場合
             {
                 _cardControllers[i].gameObject.transform.SetParent(_teamPanel.transform);　//適当な場所にあるカードを仕分け
+                _isTeams.Add(true);
             }
             else
             {
                 _cardControllers[i].gameObject.transform.SetParent(_boxPanel.transform);
+                _isTeams.Add(false);
             }
+            Debug.LogError($"{i}番目は{_isTeams[i]}");
         }
+    }
+    public void ChangeTeam(GameObject card,int num,Transform box,Transform team)
+    {
+
+            if (_cardControllers[num].gameObject.transform.parent.gameObject.tag == _Box)　//コンポーネントにあるフラグがtrueの場合
+            {
+                card.transform.SetParent(team);
+                _isTeams[num] = true;
+            }
+            else
+            {
+                card.transform.SetParent(box);
+                _isTeams[num] = false;
+            }
+            Debug.LogError($"{card.name}は{_isTeams[num]}");
+        
     }
 }

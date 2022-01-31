@@ -2912,7 +2912,8 @@ MonoBehaviour:
   _coolTime: 2
   _delayTime: 3
   _reset: 0.5
-  _enemyPlayer: {fileID: 0}
+  _enemyPlayer: {fileID: 4263687756127695893, guid: 9a14b300057ceb640b6b521758523fbe,
+    type: 3}
 --- !u!114 &8424401150541535071
 MonoBehaviour:
   m_ObjectHideFlags: 0

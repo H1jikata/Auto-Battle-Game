@@ -151,6 +151,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268416486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268416487}
+  m_Layer: 0
+  m_Name: PlayerSpown (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268416487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268416486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604113136
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +477,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &993809975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993809976}
+  m_Layer: 0
+  m_Name: PlayerSpown (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993809976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993809975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &998188949
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,12 +698,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _players:
   - {fileID: 4263687756127695893, guid: 9a14b300057ceb640b6b521758523fbe, type: 3}
+  - {fileID: 4263687756127695893, guid: ed92f3eea3d0b5548944a8be2980818a, type: 3}
+  - {fileID: 4263687756127695893, guid: 56c45a1157c34b34ead3d58a16bb81f9, type: 3}
   _enemys:
   - {fileID: 7559021814759457265, guid: fc3c692d663506142b82d08f7875a328, type: 3}
   _card:
   - {fileID: 3457435536045631126, guid: 1a33d71062a66e24cb9e330c7dee2192, type: 3}
+  - {fileID: 2869423198910139580, guid: e55482a4597cc184eab03572594b6cce, type: 3}
   _playerSpawns:
   - {fileID: 28105152}
+  - {fileID: 268416487}
+  - {fileID: 993809976}
   _enemySpawns:
   - {fileID: 604113137}
 --- !u!4 &2038826427

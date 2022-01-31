@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Entrance : MonoBehaviour
+public class ChangeScene : SingletonMonoBehaviour<ChangeScene>
 {
+    // Start is called before the first frame update
     [SerializeField] float _time = 1f;
-    [SerializeField] string _formationScene = "";
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        Scene(_formationScene);
+        DontDestroyOnLoad(this);
     }
 
+    public void SceneChange(string scenename)
+    {
+       StartCoroutine(Scene(scenename)) ;
+    }
     IEnumerator Scene(string scene)
     {
         yield return new WaitForSeconds(_time);
         SceneManager.LoadScene(scene);
     }
-
 }

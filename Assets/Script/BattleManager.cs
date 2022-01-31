@@ -20,13 +20,15 @@ public class BattleManager : MonoBehaviour
 
     void PlayerSpawn()
     {
-        for (int i = 0; i < _players.Length; i++)
+        for (int i = 0; i < CardManager.IsTeams.Count; i++)
         {
-            _cardCon = _card[i].GetComponent<CardController>();
+            //_cardCon = _card[i].GetComponent<CardController>();
 
-            if (_cardCon.IsTeam == false)
+
+            if (CardManager.IsTeams[i] == true && CardManager.IsTeams.Count != 0)
             {
                 Instantiate(_players[i], _playerSpawns[i]);
+                Debug.LogError($"{_players[i].name}が出た！");
             }
         }
     }

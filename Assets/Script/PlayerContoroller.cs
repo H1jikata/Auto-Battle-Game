@@ -8,6 +8,7 @@ public class PlayerContoroller : MonoBehaviour
     Vector3 _dir = default;
     Rigidbody _rb;
     Animator _ani;
+    [SerializeField] string _formationScene = "";
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -40,6 +41,13 @@ public class PlayerContoroller : MonoBehaviour
         {
             Vector3 walkSpeed = _rb.velocity;
             _ani.SetFloat("Speed", walkSpeed.magnitude);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Entrance")
+        {
+            ChangeScene.Instance.SceneChange(_formationScene);
         }
     }
 

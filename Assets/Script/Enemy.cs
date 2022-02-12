@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float _coolTime = 0;
     [SerializeField,Tooltip("次に行動できるまでの時間")] float _delayTime = 3f;
     [SerializeField,Tooltip("コルーチンの時間")] float _reset = 1;
-    [SerializeField,Tooltip("攻撃するターゲット")] GameObject _enemyPlayer = default;
+    GameObject _enemyPlayer;
     bool _flg = false;
     Animator _ani;
     PlayerMove _playerMove;
@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     {
         _ani =  GetComponent<Animator>();
         _playerMove = GetComponent<PlayerMove>();
+        FindEnemy();
     }
 
     void Update()
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         if(_enemyPlayer)
         {
-            int rnd = Random.Range(1, 10);
+            float rnd = Random.Range(1, 10);
             if (rnd < 5)
             {
                 _ani.SetBool("Attack", true);
@@ -55,6 +56,14 @@ public class Enemy : MonoBehaviour
                 }
             }
         }
+    }
+
+    void FindEnemy()
+    {
+        GameObject _a = GameObject.Find("PlayerSpown");
+        Debug.Log(_a);
+        _enemyPlayer = _a.transform.Find("red(Clone)").gameObject;
+        Debug.Log(_enemyPlayer);
     }
 
     private IEnumerator CoolTime()

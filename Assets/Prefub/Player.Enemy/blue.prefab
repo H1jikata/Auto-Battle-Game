@@ -1783,7 +1783,7 @@ GameObject:
   - component: {fileID: 5259417917311486042}
   - component: {fileID: -506965204733927512}
   m_Layer: 0
-  m_Name: Player
+  m_Name: blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1866,6 +1866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerHp: 100
   _defense: 5
+  _currentHp: 0
+  _slider: {fileID: 7765232008469669899, guid: d48372c4159f1b743a30c35ebf533fc4, type: 3}
 --- !u!1 &4356770285230677232
 GameObject:
   m_ObjectHideFlags: 0

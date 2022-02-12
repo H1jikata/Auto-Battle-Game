@@ -1,12 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour,IDamage
 {
     [SerializeField] float _playerHp = 100;
     [SerializeField] float _defense = 5;
-   
+    [SerializeField] float _currentHp = 100;
+    [SerializeField] Slider _slider = default;
+
+    private void Start()
+    {
+        //HPゲージを満タンにする
+        //_slider.value = 1;
+        //_currentHp = _playerHp;
+    }
     public void DefenceChange(float value)
     {
         _defense += value;
@@ -15,6 +24,7 @@ public class PlayerStatus : MonoBehaviour,IDamage
     public void GetDamage(float damage)
     {
         _playerHp = Mathf.Abs(damage - Defence);
+        //_slider.value = _playerHp / _currentHp;
 
         if(_playerHp <= 0)
         {

@@ -30,7 +30,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (_enemy)
         {
-            int rnd = Random.Range(1, 10);
+            float rnd = Random.Range(1, 10);
             if (rnd < 5)
             {
                 _ani.SetBool("Attack", true);

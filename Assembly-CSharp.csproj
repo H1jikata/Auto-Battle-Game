@@ -104,6 +104,7 @@
     <Compile Include="Assets\Script\EnemyStatus.cs" />
     <Compile Include="Assets\Script\Entrance.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
+    <Compile Include="Assets\Script\HPBERcon.cs" />
     <Compile Include="Assets\Script\Idamage.cs" />
     <Compile Include="Assets\Script\PlayerContoroller.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />

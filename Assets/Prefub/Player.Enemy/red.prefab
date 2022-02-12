@@ -1783,7 +1783,7 @@ GameObject:
   - component: {fileID: 5259417917311486042}
   - component: {fileID: -506965204733927512}
   m_Layer: 0
-  m_Name: Player
+  m_Name: red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1839,7 +1839,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coolTime: 0
   _reset: 1
+  _reset1: 1
   _enemy: {fileID: 7559021814759457265, guid: fc3c692d663506142b82d08f7875a328, type: 3}
+  _cutInPanel: {fileID: 7588887058246986098, guid: 78ae3e2a80455d14592e440d8c135eeb,
+    type: 3}
 --- !u!114 &5259417917311486042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,6 +1869,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerHp: 100
   _defense: 5
+  _currentHp: 100
+  _slider: {fileID: 0}
 --- !u!1 &4356770285230677232
 GameObject:
   m_ObjectHideFlags: 0

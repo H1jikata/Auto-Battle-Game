@@ -61,9 +61,7 @@ public class Enemy : MonoBehaviour
     void FindEnemy()
     {
         GameObject _a = GameObject.Find("PlayerSpown");
-        Debug.Log(_a);
         _enemyPlayer = _a.transform.Find("red(Clone)").gameObject;
-        Debug.Log(_enemyPlayer);
     }
 
     private IEnumerator CoolTime()

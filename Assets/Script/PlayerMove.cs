@@ -6,29 +6,43 @@ using UnityEngine.UI;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField,Tooltip("次の行動までの時間")] float _coolTime = 0;
+    [SerializeField, Tooltip("Ultの時間")] float _ultTime = 0.01f;
+    [SerializeField] float _sliderHp = 0;
     [SerializeField,Tooltip("コルーチンの待つ時間")] float _reset = 1;
     [SerializeField] float _reset1 = 1;
+
     [SerializeField,Tooltip("攻撃するEnemyのGameObject")] GameObject _enemy = default;
 
-    GameObject _cutInPanel = default;
     bool _flg = false;
     Animator _ani;
     Enemy _enemyHp;
     IDamage _damage;
-
+    Slider _ultTimeSlider;
+    Canvas _cutInPanel;
     void Start()
     {
         _ani = GetComponent<Animator>();
         _enemyHp = GetComponent<Enemy>();
+        _ultTimeSlider = GameObject.Find("Ultber (2)").GetComponent<Slider>();
+        _cutInPanel = GameObject.Find("CutInCanvas").GetComponent<Canvas>();
     }
 
     void Update()
     {
         _coolTime += Time.deltaTime;
+        //_ultTime += Time.deltaTime;
         if (_coolTime > 4.5f && _flg == false)
         {
             Attack();
         }
+
+        _sliderHp += _ultTime;
+        if(_sliderHp >= _ultTimeSlider.maxValue)
+        {
+            _ultTime = 0f;
+            _sliderHp += _ultTime;
+        }
+        _ultTimeSlider.value = _sliderHp;
     }
 
     void Attack()
@@ -63,15 +77,21 @@ public class PlayerMove : MonoBehaviour
 
     public void Ult()
     {
-        _cutInPanel.SetActive(true);
-        Debug.Log(_cutInPanel);
+        if(_ultTimeSlider.value == 1)
+        {
+            
+            StartCoroutine(Finishactive());
+        }
+
         //StartCoroutine(Finishactive());
     }
 
     private IEnumerator Finishactive()
     {
         yield return new WaitForSeconds(_reset1);
-        //_cutInPanel.SetActive(false);
+        _cutInPanel.SetActive(false);
+        _sliderHp = _ultTimeSlider.minValue;
+        _ultTime = default;
     }
     private IEnumerator CoolTime()
     {

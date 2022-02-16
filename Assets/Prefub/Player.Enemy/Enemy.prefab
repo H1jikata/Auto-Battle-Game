@@ -2912,8 +2912,6 @@ MonoBehaviour:
   _coolTime: 2
   _delayTime: 3
   _reset: 0.5
-  _enemyPlayer: {fileID: 4263687756127695893, guid: 9a14b300057ceb640b6b521758523fbe,
-    type: 3}
 --- !u!114 &8424401150541535071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2938,8 +2936,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c07373f13d749344bdcbe4a037e31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyHp: 20
+  _enemyMaxHp: 20
   _defence: 3
+  _currentHp: 20
+  _damageUI: {fileID: 1646813219256976919, guid: 00b7f5c5e1fe66645ac91f0a859096ec,
+    type: 3}
+  _posObj: {fileID: 7559021814759457265}
+  _adjPos: {x: 0, y: 1, z: 0}
 --- !u!1 &7573980911698307553
 GameObject:
   m_ObjectHideFlags: 0

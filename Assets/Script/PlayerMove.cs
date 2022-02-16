@@ -10,6 +10,7 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     [SerializeField] float _sliderHp = 0;
     [SerializeField,Tooltip("コルーチンの待つ時間")] float _reset = 1;
     [SerializeField] float _reset1 = 1;
+    [SerializeField] float _coolfirst = 4.5f;
 
     [SerializeField,Tooltip("攻撃するEnemyのName")] string _enemyName = "";
     [SerializeField, Tooltip("enemyのspawnのName")] string _spawnName = "";
@@ -35,7 +36,7 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     {
         _coolTime += Time.deltaTime;
         //_ultTime += Time.deltaTime;
-        if (_coolTime > 4.5f && IsAttack == false)
+        if (_coolTime > _coolfirst && IsAttack == false)
         {
             Attack();
         }

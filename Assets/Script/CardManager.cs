@@ -48,12 +48,12 @@ public class CardManager : SingletonMonoBehaviour<CardManager>
             if (_cardControllers[i].IsTeam)　//コンポーネントにあるフラグがtrueの場合
             {
                 _cardControllers[i].gameObject.transform.SetParent(_teamPanel.transform);　//適当な場所にあるカードを仕分け
-                _isTeams.Add(true);
+                IsTeams.Add(true);
             }
             else
             {
                 _cardControllers[i].gameObject.transform.SetParent(_boxPanel.transform);
-                _isTeams.Add(false);
+                IsTeams.Add(false);
             }
             Debug.LogError($"{i}番目は{_isTeams[i]}");
         }
@@ -64,12 +64,12 @@ public class CardManager : SingletonMonoBehaviour<CardManager>
             if (_cardControllers[num].gameObject.transform.parent.gameObject.tag == _Box)　//コンポーネントにあるフラグがtrueの場合
             {
                 card.transform.SetParent(team);
-                _isTeams[num] = true;
+                IsTeams[num] = true;
             }
             else
             {
                 card.transform.SetParent(box);
-                _isTeams[num] = false;
+                IsTeams[num] = false;
             }
             Debug.LogError($"{card.name}は{_isTeams[num]}");
         

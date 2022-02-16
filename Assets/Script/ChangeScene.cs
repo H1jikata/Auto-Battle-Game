@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : SingletonMonoBehaviour<ChangeScene>
 {
-    // Start is called before the first frame update
     [SerializeField] float _time = 1f;
+    /// <summary>ボタンの効果音</summary>
+    [SerializeField] AudioSource _audio;
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -14,6 +15,7 @@ public class ChangeScene : SingletonMonoBehaviour<ChangeScene>
 
     public void SceneChange(string scenename)
     {
+        _audio.Play();
        StartCoroutine(Scene(scenename)) ;
     }
     IEnumerator Scene(string scene)

@@ -688,6 +688,7 @@
     <Compile Include="Assets\Script\CardManager.cs" />
     <Compile Include="Assets\Script\ChangeScene.cs" />
     <Compile Include="Assets\Script\DamageUi.cs" />
+    <Compile Include="Assets\Script\DestroyObject.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyStatus.cs" />
     <Compile Include="Assets\Script\Entrance.cs" />

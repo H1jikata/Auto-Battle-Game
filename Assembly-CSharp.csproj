@@ -96,6 +96,18 @@
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\AutoBlink.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\CameraController.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\FaceUpdate.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IKCtrlRightHand.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IKLookAt.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IdleChanger.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\RandomWind.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringManager.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
     <Compile Include="Assets\Script\BattleManager.cs" />
     <Compile Include="Assets\Script\ButtonSceneChange.cs" />
@@ -115,6 +127,7 @@
     <Compile Include="Assets\Script\SelectController.cs" />
     <Compile Include="Assets\Script\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\test.cs" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_DoubleShadeWithFeather_Tess_Light_StencilMask.shader" />
@@ -131,6 +144,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\UCTS_Outline_Tess.cginc" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_AngelRing_TransClipping_StencilOut.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_OutlineObject.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Clipping_OnlyColor.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\UCTS_ShadowCaster_Tess.cginc" />
@@ -141,9 +155,11 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\UCTS_Tess.cginc" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_AngelRing_Mobile.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_TransClipping_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_DoubleShadeWithFeather_Tess_Light.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_StencilOut.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_ShadingGradeMap_AngelRing_Tess_TransClipping.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_AngelRing_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess_StencilOut.shader" />
@@ -160,8 +176,10 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_OutlineObject_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_TransClipping.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_TransClipping_StencilMask.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader_VS.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_TransClipping_StencilOut.shader" />
@@ -200,7 +218,9 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_DoubleShadeWithFeather_TransClipping_Tess_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_AngelRing_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_TransClipping_Tess_StencilMask.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\readme.txt" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Clipping_StencilMask.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader_VS.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_AngelRing.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_StencilMask.shader" />
@@ -209,6 +229,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_TransClipping_StencilMask.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_TransClipping_StencilOut.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader_VS.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_DoubleShadeWithFeather_Transparent_Tess.shader" />
@@ -232,6 +253,7 @@
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_TransClipping.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Clipping_StencilOut.shader" />
+    <None Include="Assets\README_SD_UnityChan.txt" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_DoubleShadeWithFeather_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_OutlineObject_StencilOut.shader" />
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />
@@ -241,6 +263,7 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_TransClipping.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap_Transparent_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_DoubleShadeWithFeather_Mobile_StencilMask.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_TransClipping_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_DoubleShadeWithFeather_Tess.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\UCTS_Outline2.cginc" />
@@ -248,6 +271,7 @@
     <None Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader_VS.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\ToonColor_ShadingGradeMap.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\ToonColor_ShadingGradeMap_TransClipping_Tess_StencilMask.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Toon_ShadingGradeMap_Mobile_StencilOut.shader" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\Tess\Toon_ShadingGradeMap_Tess_Light_StencilMask.shader" />
     <Reference Include="UnityEngine">

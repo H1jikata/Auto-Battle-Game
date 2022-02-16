@@ -669,6 +669,18 @@
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\AutoBlink.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\CameraController.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\FaceUpdate.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IKCtrlRightHand.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IKLookAt.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\IdleChanger.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\RandomWind.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\SpringManager.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\AssetStore\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
     <Compile Include="Assets\Script\BattleManager.cs" />
     <Compile Include="Assets\Script\ButtonSceneChange.cs" />
@@ -825,6 +837,18 @@
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\UCTS_Outline2.cginc" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\UCTS_ShadingGradeMap.cginc" />
     <None Include="Assets\AssetStore\SD Unity-Chan Haon Custom\Shader\Unity-chan Toon Shader Ver 2.0.6\UCTS_ShadowCaster.cginc" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+    <None Include="Assets\AssetStore\UnityChan\Models\UnityChanShader\Shader\readme.txt" />
+    <None Include="Assets\README_SD_UnityChan.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

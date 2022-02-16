@@ -90,7 +90,12 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
 
     public void Ult()
     {
+        float rnd = Random.Range(20, 30);
         IsUlt = true;
+        IsAttack = true;
+        _ani.SetBool("UltAttack", true);
+        _enemy.GetComponent<IDamage>().GetDamage(rnd);
+        StartCoroutine(CoolTime2());
     }
 
     void FindEnemy()
@@ -110,6 +115,14 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     {
         yield return new WaitForSeconds(_reset);
         _ani.SetBool("Attack2", false);
+        _coolTime = 0;
+        IsAttack = false;
+    }
+
+    private IEnumerator CoolTime2()
+    {
+        yield return new WaitForSeconds(1.5f);
+        _ani.SetBool("UltAttack", false);
         _coolTime = 0;
         IsAttack = false;
     }

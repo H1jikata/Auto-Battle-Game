@@ -14,6 +14,9 @@ public class CardController : MonoBehaviour
     /// <summary>相手側のPanelのTransform</summary>
     Transform _teamPanelTransform = default;
 
+    [SerializeField] AudioClip _audioClip = default;
+    AudioSource _audio;
+
     //Teamにはいっているか判断するflag
     bool _IsTeam;
 
@@ -24,6 +27,7 @@ public class CardController : MonoBehaviour
         //PanelのTransformを取得
         _teamPanelTransform = GameObject.FindGameObjectWithTag(_Team).transform;
         _boxPanelTransform = GameObject.FindGameObjectWithTag(_Box).transform;
+        _audio = GetComponent<AudioSource>();
     }
     public void OnClick()
     {
@@ -39,7 +43,9 @@ public class CardController : MonoBehaviour
         //    IsTeam = false;
         //}
         CardManager.Instance.ChangeTeam(this.gameObject,_number, _boxPanelTransform, _teamPanelTransform);
+        _audio.PlayOneShot(_audioClip);
     }
+
     /// <summary>
     ///Teamにはいっているか判断するflag
     /// </summary>

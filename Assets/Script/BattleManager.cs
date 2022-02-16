@@ -12,6 +12,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Transform[] _enemySpawns = default;
 
     [SerializeField] GameObject _ultPanel = default;
+    [SerializeField] GameObject _ultPanel1 = default;
     [SerializeField] float _reset = default;
     void Start()
     {
@@ -23,9 +24,6 @@ public class BattleManager : MonoBehaviour
     {
         for (int i = 0; i < CardManager.IsTeams.Count; i++)
         {
-            //_cardCon = _card[i].GetComponent<CardController>();
-
-
             if (CardManager.IsTeams[i] == true && CardManager.IsTeams.Count != 0)
             {
                 Instantiate(_players[i], _playerSpawns[i]);
@@ -52,6 +50,18 @@ public class BattleManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_reset);
         _ultPanel.SetActive(false);
+    }
+
+    public void Players1()
+    {
+        PlayerMove.Instance.Ult();
+        StartCoroutine(Panel1());
+    }
+
+    private IEnumerator Panel1()
+    {
+        yield return new WaitForSeconds(_reset);
+        _ultPanel1.SetActive(false);
     }
 }
 

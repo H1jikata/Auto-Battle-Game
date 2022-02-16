@@ -2852,6 +2852,8 @@ MonoBehaviour:
   _coolfirst: 3
   _enemyName: Enemy1(Clone)
   _spawnName: EnemySpawn
+  _ultSliderName: Ultber (3)
+  _cutInButton: CutInButton (1)
 --- !u!114 &3615568105284178458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,9 +2878,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9922010b8ab881c40849f0e61c0ac638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHp: 50
+  _maxHp: 20
   _defense: 5
-  _currentHp: 50
+  _currentHp: 20
+  _sliderName: HPber (1)
 --- !u!1 &4458446566586439574
 GameObject:
   m_ObjectHideFlags: 0

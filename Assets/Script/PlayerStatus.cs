@@ -8,11 +8,14 @@ public class PlayerStatus : MonoBehaviour,IDamage
     [SerializeField] float _maxHp = 100;
     [SerializeField] float _defense = 5;
     [SerializeField] float _currentHp = 100;
+
+    [SerializeField] string _sliderName = "";
     Slider _slider;
+
 
     private void Start()
     {
-        _slider = GameObject.Find("HPber").GetComponent<Slider>();
+        _slider = GameObject.Find(_sliderName).GetComponent<Slider>();
         _currentHp = _maxHp;
         _slider.value = _currentHp;
     }

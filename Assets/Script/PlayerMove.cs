@@ -14,6 +14,8 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
 
     [SerializeField,Tooltip("攻撃するEnemyのName")] string _enemyName = "";
     [SerializeField, Tooltip("enemyのspawnのName")] string _spawnName = "";
+    [SerializeField] string _ultSliderName = default;
+    [SerializeField] string _cutInButton = default;
     GameObject _enemy;
     bool IsAttack = false;
     bool IsUlt = default;
@@ -22,13 +24,17 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     IDamage _damage;
     Slider _ultTimeSlider;
     Button _ultButtton;
+    [SerializeField] AudioClip _audio;
+    [SerializeField] AudioClip _audio1;
+    AudioSource _audioSource;
     void Start()
     {
         _ani = GetComponent<Animator>();
         _enemyHp = GetComponent<Enemy>();
-        _ultTimeSlider = GameObject.Find("Ultber (2)").GetComponent<Slider>();
-        _ultButtton = GameObject.Find("CutInButton").GetComponent<Button>();
+        _ultTimeSlider = GameObject.Find(_ultSliderName).GetComponent<Slider>();
+        _ultButtton = GameObject.Find(_cutInButton).GetComponent<Button>();
         _ultButtton.interactable = false;
+        _audioSource = GetComponent<AudioSource>();
         FindEnemy();
     }
 
@@ -39,6 +45,7 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
         if (_coolTime > _coolfirst && IsAttack == false)
         {
             Attack();
+            _audioSource.PlayOneShot(_audio);
         }
 
         if(IsUlt == true)
@@ -92,6 +99,7 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     public void Ult()
     {
         float rnd = Random.Range(20, 30);
+        _audioSource.PlayOneShot(_audio1);
         IsUlt = true;
         IsAttack = true;
         _ani.SetBool("UltAttack", true);

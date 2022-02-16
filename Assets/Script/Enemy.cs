@@ -12,10 +12,14 @@ public class Enemy : MonoBehaviour
     Animator _ani;
     PlayerMove _playerMove;
     IDamage _damage;
+
+    [SerializeField] AudioClip _audioClip = default;
+    AudioSource _audio;
     void Start()
     {
         _ani =  GetComponent<Animator>();
         _playerMove = GetComponent<PlayerMove>();
+        _audio = GetComponent<AudioSource>();
         FindEnemy();
     }
 
@@ -25,6 +29,7 @@ public class Enemy : MonoBehaviour
         if(_coolTime > _delayTime && _flg == false)
         {
             Attack();
+            _audio.PlayOneShot(_audioClip);
         }
     }
 

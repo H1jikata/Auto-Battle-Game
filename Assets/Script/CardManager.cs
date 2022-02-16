@@ -55,7 +55,7 @@ public class CardManager : SingletonMonoBehaviour<CardManager>
                 _cardControllers[i].gameObject.transform.SetParent(_boxPanel.transform);
                 IsTeams.Add(false);
             }
-            Debug.LogError($"{i}番目は{_isTeams[i]}");
+            Debug.Log($"{i}番目は{_isTeams[i]}");
         }
     }
     public void ChangeTeam(GameObject card,int num,Transform box,Transform team)
@@ -71,7 +71,7 @@ public class CardManager : SingletonMonoBehaviour<CardManager>
                 card.transform.SetParent(box);
                 IsTeams[num] = false;
             }
-            Debug.LogError($"{card.name}は{_isTeams[num]}");
+            Debug.Log($"{card.name}は{_isTeams[num]}");
         
     }
 }

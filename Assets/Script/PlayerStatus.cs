@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour,IDamage
 {
-    [SerializeField] float _playerHp = 100;
+    [SerializeField] float _maxHp = 100;
     [SerializeField] float _defense = 5;
     [SerializeField] float _currentHp = 100;
     Slider _slider;
@@ -13,6 +13,8 @@ public class PlayerStatus : MonoBehaviour,IDamage
     private void Start()
     {
         _slider = GameObject.Find("HPber").GetComponent<Slider>();
+        _currentHp = _maxHp;
+        _slider.value = _currentHp;
     }
     public void DefenceChange(float value)
     {
@@ -21,11 +23,10 @@ public class PlayerStatus : MonoBehaviour,IDamage
 
     public void GetDamage(float damage)
     {
-        _playerHp -= Mathf.Abs(damage - Defence);
-        _slider.value = _playerHp;
-        Debug.Log(_playerHp);
+        _currentHp -= Mathf.Abs(damage - Defence);
+        _slider.value = _currentHp;
 
-        if(_playerHp <= 0)
+        if(_currentHp <= 0)
         {
             Debug.Log("Playerがやられた");
             Destroy(this.gameObject);
@@ -39,7 +40,7 @@ public class PlayerStatus : MonoBehaviour,IDamage
 
     public float Hp
     {
-        get { return _playerHp; }
-        set { _playerHp = value; }
+        get { return _maxHp; }
+        set { _maxHp = value; }
     }
 }

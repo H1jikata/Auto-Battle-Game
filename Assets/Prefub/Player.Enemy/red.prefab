@@ -1841,10 +1841,8 @@ MonoBehaviour:
   _ultTime: 0.01
   _sliderHp: 0
   _reset: 1
-  _reset1: 1
+  _reset1: 2
   _enemy: {fileID: 7559021814759457265, guid: fc3c692d663506142b82d08f7875a328, type: 3}
-  _ultTimeSlider: {fileID: 2571737522998369554, guid: 2598e50466e5ed7448c0fc6f210a2110,
-    type: 3}
 --- !u!114 &5259417917311486042
 MonoBehaviour:
   m_ObjectHideFlags: 0

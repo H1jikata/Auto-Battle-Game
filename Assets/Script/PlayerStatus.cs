@@ -24,7 +24,7 @@ public class PlayerStatus : MonoBehaviour,IDamage
     public void GetDamage(float damage)
     {
         _playerHp = Mathf.Abs(damage - Defence);
-        //_slider.value = _playerHp / _currentHp;
+        Debug.Log(_playerHp);
 
         if(_playerHp <= 0)
         {

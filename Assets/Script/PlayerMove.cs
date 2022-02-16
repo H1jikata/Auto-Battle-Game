@@ -18,13 +18,13 @@ public class PlayerMove : MonoBehaviour
     Enemy _enemyHp;
     IDamage _damage;
     Slider _ultTimeSlider;
-    Canvas _cutInPanel;
+    //Button _ult
+   // Button _ult
     void Start()
     {
         _ani = GetComponent<Animator>();
         _enemyHp = GetComponent<Enemy>();
         _ultTimeSlider = GameObject.Find("Ultber (2)").GetComponent<Slider>();
-        _cutInPanel = GameObject.Find("CutInCanvas").GetComponent<Canvas>();
     }
 
     void Update()
@@ -79,7 +79,6 @@ public class PlayerMove : MonoBehaviour
     {
         if(_ultTimeSlider.value == 1)
         {
-            
             StartCoroutine(Finishactive());
         }
 
@@ -89,7 +88,6 @@ public class PlayerMove : MonoBehaviour
     private IEnumerator Finishactive()
     {
         yield return new WaitForSeconds(_reset1);
-        _cutInPanel.SetActive(false);
         _sliderHp = _ultTimeSlider.minValue;
         _ultTime = default;
     }

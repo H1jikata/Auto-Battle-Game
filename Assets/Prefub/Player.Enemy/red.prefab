@@ -1842,7 +1842,8 @@ MonoBehaviour:
   _sliderHp: 0
   _reset: 1
   _reset1: 1.6
-  _enemy: {fileID: 7559021814759457265, guid: fc3c692d663506142b82d08f7875a328, type: 3}
+  _enemyName: Enemy(Clone)
+  _spawnName: EnemySpawn
 --- !u!114 &5259417917311486042
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,8 +11,9 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     [SerializeField,Tooltip("コルーチンの待つ時間")] float _reset = 1;
     [SerializeField] float _reset1 = 1;
 
-    [SerializeField,Tooltip("攻撃するEnemyのGameObject")] GameObject _enemy = default;
-
+    [SerializeField,Tooltip("攻撃するEnemyのName")] string _enemyName = "";
+    [SerializeField, Tooltip("enemyのspawnのName")] string _spawnName = "";
+    GameObject _enemy;
     bool IsAttack = false;
     bool IsUlt = default;
     Animator _ani;
@@ -27,6 +28,7 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
         _ultTimeSlider = GameObject.Find("Ultber (2)").GetComponent<Slider>();
         _ultButtton = GameObject.Find("CutInButton").GetComponent<Button>();
         _ultButtton.interactable = false;
+        FindEnemy();
     }
 
     void Update()
@@ -89,6 +91,12 @@ public class PlayerMove :  SingletonMonoBehaviour<PlayerMove>
     public void Ult()
     {
         IsUlt = true;
+    }
+
+    void FindEnemy()
+    {
+        GameObject _a = GameObject.Find(_spawnName);
+        _enemy = _a.transform.Find(_enemyName).gameObject;
     }
     private IEnumerator CoolTime()
     {

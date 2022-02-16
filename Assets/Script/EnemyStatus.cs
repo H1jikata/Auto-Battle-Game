@@ -4,34 +4,19 @@ using UnityEngine;
 
 public class EnemyStatus : MonoBehaviour,IDamage
 {
-    [SerializeField] float _enemyHp = 20;
+    [SerializeField] float _enemyMaxHp = 20;
     [SerializeField] float _defence = 3;
-    GameObject _enemy;
-    bool Isdestroyflg = false;
+    [SerializeField] float _currentHp = 20;
 
-    private void Update()
-    {
-        if(Isdestroyflg)
-        {
-            Finish();
-        }
-    }
+
     public void GetDamage(float damege)
     {
-        _enemyHp -= Mathf.Abs(Defence - damege);
-        if (_enemyHp <= 0)
-        {
-            Isdestroyflg = true;
-        }
-    }
-
-    void Finish()
-    {
-        if (_enemyHp <= 0)
+        _enemyMaxHp -= Mathf.Abs(Defence - damege);
+        Debug.Log(_enemyMaxHp);
+        if (_enemyMaxHp <= 0)
         {
             Debug.Log("Enemyを倒した");
-            _enemy = this.gameObject;
-            Destroy(_enemy);
+            Destroy(this.gameObject);
         }
     }
 

@@ -1841,7 +1841,7 @@ MonoBehaviour:
   _ultTime: 0.01
   _sliderHp: 0
   _reset: 1
-  _reset1: 2
+  _reset1: 1.6
   _enemy: {fileID: 7559021814759457265, guid: fc3c692d663506142b82d08f7875a328, type: 3}
 --- !u!114 &5259417917311486042
 MonoBehaviour:
@@ -1867,7 +1867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9922010b8ab881c40849f0e61c0ac638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerHp: 100
+  _playerHp: 30
   _defense: 5
   _currentHp: 100
   _slider: {fileID: 7765232008469669899, guid: d48372c4159f1b743a30c35ebf533fc4, type: 3}

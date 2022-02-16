@@ -8,13 +8,11 @@ public class PlayerStatus : MonoBehaviour,IDamage
     [SerializeField] float _playerHp = 100;
     [SerializeField] float _defense = 5;
     [SerializeField] float _currentHp = 100;
-    [SerializeField] Slider _slider = default;
+    Slider _slider;
 
     private void Start()
     {
-        //HPゲージを満タンにする
-        //_slider.value = 1;
-        //_currentHp = _playerHp;
+        _slider = GameObject.Find("HPber").GetComponent<Slider>();
     }
     public void DefenceChange(float value)
     {
@@ -23,7 +21,8 @@ public class PlayerStatus : MonoBehaviour,IDamage
 
     public void GetDamage(float damage)
     {
-        _playerHp = Mathf.Abs(damage - Defence);
+        _playerHp -= Mathf.Abs(damage - Defence);
+        _slider.value = _playerHp;
         Debug.Log(_playerHp);
 
         if(_playerHp <= 0)

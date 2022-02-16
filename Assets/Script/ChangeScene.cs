@@ -18,6 +18,12 @@ public class ChangeScene : SingletonMonoBehaviour<ChangeScene>
         _audio.Play();
        StartCoroutine(Scene(scenename)) ;
     }
+
+    public void SceneChanges(string scenename)
+    {
+        StartCoroutine(Scene(scenename));
+    }
+
     IEnumerator Scene(string scene)
     {
         yield return new WaitForSeconds(_time);

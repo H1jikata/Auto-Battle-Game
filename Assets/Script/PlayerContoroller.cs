@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerContoroller : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class PlayerContoroller : MonoBehaviour
     {
         if (other.gameObject.tag == "Entrance")
         {
-            ChangeScene.Instance.SceneChange(_formationScene);
+            SceneManager.LoadScene(_formationScene);
         }
     }
 

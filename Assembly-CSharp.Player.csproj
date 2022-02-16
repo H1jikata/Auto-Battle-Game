@@ -637,6 +637,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetStore\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\CharacterController.cs" />
+    <Compile Include="Assets\AssetStore\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
+    <Compile Include="Assets\AssetStore\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlBehaviour.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlClip.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\LightControl\LightControlMixerBehaviour.cs" />
@@ -666,7 +669,6 @@
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
     <Compile Include="Assets\AssetStore\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
     <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
-    <Compile Include="Assets\AssetStore\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
     <Compile Include="Assets\Script\AutoBattle.cs" />
     <Compile Include="Assets\Script\BattleManager.cs" />
     <Compile Include="Assets\Script\ButtonSceneChange.cs" />
